@@ -15,6 +15,8 @@ class AddSubkeyToUsersTable extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->string('subkey')->default('free');
+            $table->string('card_brand')->nullable();
+            $table->string('card_last_four')->nullable();
         });
     }
 

@@ -157,6 +157,7 @@ class SubscriptionController extends Controller
     public function subscriptionOrderIndex()
     {
 
+
         if (isset($_GET['subscription'])) {
 
             $plans = Plan::all();
@@ -208,6 +209,7 @@ class SubscriptionController extends Controller
         $user = Auth::user();
         $inputs = $request->all();
 
+
         $planKey = $inputs['plan'];
 
         if (isset($inputs['stripeToken'])) {
@@ -221,7 +223,7 @@ class SubscriptionController extends Controller
         if (!$user->hasStripeId()) {
 
             if (!isset($inputs['stripeToken'])) {
-                return redirect()->with('error', 'There seems to be an issue. Please try again. IF the problem persists, please contact us and we will try to help.');
+                return redirect()->back()->withErrors(['error' => 'There seems to be an issue. Please try again. IF the problem persists, please contact us and we will try to help.']);
             }
 
             $user->createAsStripeCustomer($paymentToken);

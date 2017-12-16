@@ -24,6 +24,9 @@ class User extends Authenticatable
         'country_code'
     ];
 
+    protected $dates = ['trial_ends_at', 'ends_at'];
+
+
     /**
      * The attributes that should be hidden for arrays.
      *

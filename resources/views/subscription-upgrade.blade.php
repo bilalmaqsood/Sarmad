@@ -128,14 +128,18 @@
 
 
                                     <div class="section-plans__plan-footer">
+                                        <form action="/user/subscription/order" method=POST>
+                                            <input type="hidden" name="testMode" value="100">
+                                            <input type="hidden" name="plan" value="{{ $plan->subkey }}">
+                                            <input type="hidden" name="cartId" value="{{ $plan->max_tours }}">
+                                            <input type="hidden" name="amount" value="{{ $plan->price }}">
+                                            <input type="hidden" name="currency" value="GBP">
+                                             @if(Auth::guest())
+                                         <a href="{{url('/login')}}" class="btn btn-primary green">Subscribe</a>
+                                        @else
+                                         <a href="{{url('/user/subscription/order')}}?subscription={{$plan->subkey}}" class="btn btn-primary green">Subscribe</a>
+                                        @endif
 
-                                        <form action="https://secure-test.worldpay.com/wcc/purchase" method=POST>
-                                        <input type="hidden" name="testMode" value="100">
-                                        <input type="hidden" name="instId" value="1249558">
-                                        <input type="hidden" name="cartId" value="{{ $plan->max_tours }}">
-                                        <input type="hidden" name="amount" value="{{ $plan->price }}">
-                                        <input type="hidden" name="currency" value="GBP">
-                                        <input class="btn btn-primary green" type=submit value="Subscribe">
                                         </form>
                                     </div>
 
