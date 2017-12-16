@@ -1,0 +1,116 @@
+[14-Nov-2017 11:43:33 UTC] PHP Warning:  include(/home/sarmad1/public_html/vendor/composer/../laravel/framework/src/Illuminate/Contracts/Container/Container.php): failed to open stream: No such file or directory in /home/sarmad1/public_html/vendor/composer/ClassLoader.php on line 444
+[14-Nov-2017 11:43:33 UTC] PHP Warning:  include(): Failed opening '/home/sarmad1/public_html/vendor/composer/../laravel/framework/src/Illuminate/Contracts/Container/Container.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/sarmad1/public_html/vendor/composer/ClassLoader.php on line 444
+[14-Nov-2017 11:43:33 UTC] PHP Fatal error:  Interface 'Illuminate\Contracts\Container\Container' not found in /home/sarmad1/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 13
+[14-Nov-2017 12:07:52 UTC] PHP Warning:  include(/home/sarmad1/public_html/app/Http/Kernel.php): failed to open stream: No such file or directory in /home/sarmad1/public_html/vendor/composer/ClassLoader.php on line 444
+[14-Nov-2017 12:07:52 UTC] PHP Warning:  include(): Failed opening '/home/sarmad1/public_html/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/sarmad1/public_html/vendor/composer/ClassLoader.php on line 444
+[14-Nov-2017 12:07:52 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Http\Kernel does not exist in /home/sarmad1/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home/sarmad1/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home/sarmad1/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home/sarmad1/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(564): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array)
+#3 /home/sarmad1/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(709): Illuminate\Container\Container->makeWith('App\\Http\\Kernel', Array)
+#4 /home/sarmad1/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(248): Illuminate\Foundation\Application->makeWith('App\\Http\\Kernel', Array)
+#5 /home/sarmad1/public_html/ve in /home/sarmad1/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
+[21-Nov-2017 05:54:12] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home1/sarmadte/public_html/public/index.php on line 50
+[21-Nov-2017 05:54:12] PHP Parse error:  syntax error, unexpected T_STRING in /home1/sarmadte/public_html/public/index.php on line 50
+[14-Dec-2017 05:07:49 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home1/sarmadte/public_html/storage/framework/views/1fa28f2d89d3360a6988b9f9f7099f9b778aa08c.php on line 137
+[15-Dec-2017 06:47:13 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Plan' not found in /home1/sarmadte/public_html/app/Http/Controllers/PublicPageController.php on line 181
+[15-Dec-2017 06:48:04 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Plan' not found in /home1/sarmadte/public_html/app/Http/Controllers/PublicPageController.php on line 182
+[15-Dec-2017 06:48:16 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Plan' not found in /home1/sarmadte/public_html/app/Http/Controllers/PublicPageController.php on line 182
+[15-Dec-2017 06:48:29 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Plan' not found in /home1/sarmadte/public_html/app/Http/Controllers/PublicPageController.php on line 182
+[15-Dec-2017 00:16:38 America/Denver] PHP Fatal error:  Uncaught exception 'ReflectionException' with message 'Class config does not exist' in /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('config')
+#1 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('config')
+#2 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('config')
+#3 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('config')
+#4 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(106): Illuminate\Foundation\Application->make('config')
+#5 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpe in /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
+[15-Dec-2017 00:35:43 America/Denver] PHP Fatal error:  Uncaught exception 'ReflectionException' with message 'Class config does not exist' in /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('config')
+#1 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('config')
+#2 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('config')
+#3 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('config')
+#4 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(106): Illuminate\Foundation\Application->make('config')
+#5 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpe in /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
+[15-Dec-2017 00:47:25 America/Denver] PHP Fatal error:  Uncaught exception 'ReflectionException' with message 'Class config does not exist' in /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('config')
+#1 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('config')
+#2 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('config')
+#3 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('config')
+#4 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(106): Illuminate\Foundation\Application->make('config')
+#5 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpe in /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
+[15-Dec-2017 00:47:28 America/Denver] PHP Fatal error:  Uncaught exception 'ReflectionException' with message 'Class config does not exist' in /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('config')
+#1 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('config')
+#2 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('config')
+#3 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('config')
+#4 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(106): Illuminate\Foundation\Application->make('config')
+#5 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpe in /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
+[15-Dec-2017 00:47:30 America/Denver] PHP Fatal error:  Uncaught exception 'ReflectionException' with message 'Class config does not exist' in /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('config')
+#1 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('config')
+#2 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('config')
+#3 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('config')
+#4 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(106): Illuminate\Foundation\Application->make('config')
+#5 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpe in /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
+[15-Dec-2017 00:47:32 America/Denver] PHP Fatal error:  Uncaught exception 'ReflectionException' with message 'Class config does not exist' in /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('config')
+#1 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('config')
+#2 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('config')
+#3 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('config')
+#4 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(106): Illuminate\Foundation\Application->make('config')
+#5 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpe in /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
+[15-Dec-2017 00:47:34 America/Denver] PHP Fatal error:  Uncaught exception 'ReflectionException' with message 'Class config does not exist' in /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('config')
+#1 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('config')
+#2 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('config')
+#3 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('config')
+#4 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(106): Illuminate\Foundation\Application->make('config')
+#5 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpe in /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
+[15-Dec-2017 00:48:55 America/Denver] PHP Fatal error:  Uncaught exception 'ReflectionException' with message 'Class config does not exist' in /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('config')
+#1 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('config')
+#2 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('config')
+#3 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('config')
+#4 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(106): Illuminate\Foundation\Application->make('config')
+#5 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpe in /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
+[15-Dec-2017 00:48:58 America/Denver] PHP Fatal error:  Uncaught exception 'ReflectionException' with message 'Class config does not exist' in /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('config')
+#1 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('config')
+#2 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('config')
+#3 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('config')
+#4 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(106): Illuminate\Foundation\Application->make('config')
+#5 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpe in /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
+[15-Dec-2017 00:48:59 America/Denver] PHP Fatal error:  Uncaught exception 'ReflectionException' with message 'Class config does not exist' in /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('config')
+#1 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('config')
+#2 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('config')
+#3 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('config')
+#4 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(106): Illuminate\Foundation\Application->make('config')
+#5 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpe in /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
+[15-Dec-2017 00:49:00 America/Denver] PHP Fatal error:  Uncaught exception 'ReflectionException' with message 'Class config does not exist' in /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('config')
+#1 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('config')
+#2 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('config')
+#3 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('config')
+#4 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(106): Illuminate\Foundation\Application->make('config')
+#5 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpe in /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
+[15-Dec-2017 00:49:02 America/Denver] PHP Fatal error:  Uncaught exception 'ReflectionException' with message 'Class config does not exist' in /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:729
+Stack trace:
+#0 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(729): ReflectionClass->__construct('config')
+#1 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(608): Illuminate\Container\Container->build('config')
+#2 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(575): Illuminate\Container\Container->resolve('config')
+#3 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(728): Illuminate\Container\Container->make('config')
+#4 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(106): Illuminate\Foundation\Application->make('config')
+#5 /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpe in /home1/sarmadte/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 729
