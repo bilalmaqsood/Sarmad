@@ -64,7 +64,7 @@ Route::group(
 	 */
 	Route::get('/tours', 'ToursController@index')->name('tours');
 	Route::get('/tours/search', 'ToursController@searchResults');
-	Route::get('/tours/new', 'UploadController@uploadIndex');
+	Route::get('/tours/new', 'UploadController@uploadIndex')->middleware('subscription.allowance');
 
 	Route::post('/tours/new', 'UploadController@ajaxMakeTour');
 	Route::post('/tours/new/store-image', 'UploadController@ajaxStoreImage');

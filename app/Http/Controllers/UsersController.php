@@ -32,6 +32,20 @@ class UsersController extends Controller
 
 
     /**
+     * Show the Billing page.
+     */
+    public function billingIndex()
+    {
+
+        if (!\App\Helpers\GlobalData::isFreeSub()) {
+            return view('billing');
+        } else {
+            return redirect()->back();
+        }
+
+    }
+    
+    /**
      * Show the Settings Page.
      */
     public function settingsIndex()

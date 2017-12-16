@@ -35,4 +35,8 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function tours(){
+        return $this->hasMany(\App\Tours::class);
+    }
 }

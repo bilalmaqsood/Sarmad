@@ -25,7 +25,8 @@ class SubscriptionAllowance
         $subscription = Plan::where('subkey', $userSubKey)->first();
         $allowance = $subscription->max_tours;
 
-        $publicToursCount = Auth::user()->public_tours;
+        $publicToursCount = Auth::user()->tours()->count();
+        
         $toursLeft = $allowance - $publicToursCount;
 
         if ($toursLeft === 0 ) {
